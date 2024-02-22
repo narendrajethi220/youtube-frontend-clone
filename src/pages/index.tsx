@@ -1,20 +1,15 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import { VideoCard } from "@/components/VideoCard";
+import { VideoGrid } from "@/components/VideoGrid";
+import { AppBar } from "@/components/Appbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <div>
-      <VideoCard
-        title={"Introducing Sora — OpenAI’s text-to-video model"}
-        image={"Sora.jpg"}
-        author={"Open AI"}
-        views={"1.2M views"}
-        timestamp={"5 days ago"}
-        thumbnail={"thumbnail.png"}
-      ></VideoCard>
+      <AppBar />
+      <VideoGrid />
     </div>
   );
 }

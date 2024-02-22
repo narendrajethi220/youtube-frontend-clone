@@ -1,4 +1,4 @@
-import { VideoCard } from "@/components/VideoCard";
+import { VideoCard } from "../components/VideoCard";
 
 const VIDEOS = [
   {
